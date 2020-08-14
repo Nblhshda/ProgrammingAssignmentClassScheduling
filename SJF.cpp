@@ -94,9 +94,7 @@ void SJF_NP(Course proc[], int n)
     
 
   // Display processes along with all details 
-    cout << "\n\nCourse Code " << " Burst Time " << " Arrival Time "
-         << " Waiting Time " << " Turn-Around Time "
-         << " Completion Time \n"; 
+    cout<<"\n\nCourse Code\tBurst time\tPriority\tArrival time\tWaiting Time\tTurn-Around Time\tCompletion time"<<endl; 
          
     int total_wt = 0, total_tat = 0; 
     for (int i = 0 ; i < n ; i++) 
@@ -104,9 +102,8 @@ void SJF_NP(Course proc[], int n)
         total_wt = total_wt + wt[i]; 
         total_tat = total_tat + tat[i]; 
         int compl_time = tat[i] + proc[i].arrival_time; 
-        cout << " " << proc[i].ccode << "\t\t" << proc[i].duration << "\t\t"
-             << proc[i].arrival_time << "\t\t" << wt[i] << "\t\t "
-             << tat[i]  <<  "\t\t " << compl_time << endl; 
+        cout<<proc[i].ccode<<"\t\t "<<proc[i].duration<<"\t\t "<<proc[i].priority<<"\t\t\t"
+			  <<proc[i].arrival_time<<"\t\t"<<wt[i]<<"\t\t"<<tat[i]<<"\t\t\t"<<compl_time << endl; 
     } 
   
     cout << "\nAverage waiting time = "
