@@ -97,7 +97,7 @@ void priorityScheduling(Course proc[], int n)
 	        ctime[i]=stime[i]+tat[i]-wt[i];
 	    } 
 	      
-	cout<<"\n\nCourse Code\tPriority\tArrival time\tBurst time\tWaiting Time\tTurn-Around Time\tCompletion time"<<endl; 
+	cout<<"\n\nCourse Code\tBurst time\tPriority\tArrival time\tWaiting Time\tTurn-Around Time\tCompletion time"<<endl; 
 	      
 	    // display the process details 
 	      
@@ -106,9 +106,9 @@ void priorityScheduling(Course proc[], int n)
 	        wavg += wt[i]; 
 	        tavg += tat[i]; 
 	          
-	        cout<<proc[i].ccode<<"\t\t"<<proc[i].priority<<"\t\t"<< 
-	            proc[i].arrival_time<<"\t\t"<<proc[i].duration<<"\t\t"<<wt[i]
-				<<"\t\t"<<tat[i]<<"\t\t\t"<<ctime[i]<<endl; 
+	        cout<<proc[i].ccode<<"\t\t"<<proc[i].duration<<"\t\t"
+				<<proc[i].priority<<"\t\t\t"<<proc[i].arrival_time<<"\t\t"
+				<<wt[i]<<"\t\t"<<tat[i]<<"\t\t\t"<<ctime[i]<<endl; 
 	    } 
       
         // display the average waiting time 
