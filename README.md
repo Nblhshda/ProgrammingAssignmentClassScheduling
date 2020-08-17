@@ -1,4 +1,4 @@
-# ProgrammingAssignmentClassScheduling
+# Programming Assignment Class Scheduling
 # CSC3401 Operating System Section 5
 ## GROUP MEMBERS:
 * MAISARAH BINTI HAMZAH  1810325
